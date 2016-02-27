@@ -1,3 +1,7 @@
+###################
+URL Shortener
+###################
+
 I used CodeIgnter framework to create this application.
 
 Database SQL you can find in ./sql folder - database.sql
