@@ -1,8 +1,7 @@
 ###################
 URL Shortener
 ###################
-
-I used CodeIgnter framework to create this application.
+You can use this application to easily create short URL. I used CodeIgnter v.3.x framework to create this application.
 
 Database SQL you can find in ./sql folder - database.sql
 
