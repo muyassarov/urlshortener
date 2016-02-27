@@ -1,0 +1,7 @@
+I used CodeIgnter framework to create this application.
+
+Database SQL you can find in ./sql folder - database.sql
+
+For logging system we can use framework build-in logging system
+
+Config file placed at .applicaiton/config/urlshortener.php. I used it to define length of random creating string.
