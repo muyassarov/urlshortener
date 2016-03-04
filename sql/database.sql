@@ -27,7 +27,8 @@ CREATE TABLE `urls` (
   `url_long` text NOT NULL,
   `url_short` varchar(10) NOT NULL,
   `created_at` datetime NOT NULL,
-  `counter` int(11) DEFAULT NULL
+  `counter` int(11) DEFAULT NULL,
+  `deleted_at` DATETIME NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
