@@ -5,10 +5,18 @@
 $(function () {
 
     var message_block = $('#message_block'),
-        submit_button = $('#submit_button');
+        submit_button = $('#submit_button'),
+        clean_button = $('#clean_button');
 
     /**
-     *
+     * Clean form
+     */
+    clean_button.on('click', function() {
+        $('#url_long').focus();
+    });
+
+    /**
+     * Submit URL shortener form
      */
     submit_button.on('click', function (e) {
         e.preventDefault();
@@ -37,7 +45,7 @@ $(function () {
             if (data) {
                 if (data.success) {
                     $('#url_short').val(data.short_url);
-                    showMessage('Short URL was successfully created!', 'success', 'Success!');
+                    showMessage(data.message, 'success');
                 } else {
                     showMessage(data.message);
                 }

@@ -24,6 +24,7 @@ $b = base_url();
             <input type="text" id="url_short" name="url_short" class="form-control input-lg"/>
         </div>
         <button id="submit_button" class="btn btn-primary btn-lg">Submit</button>
+        <button id="clean_button" type="reset" class="btn btn-default btn-lg">Clean</button>
     </form>
 </div>
 </div>

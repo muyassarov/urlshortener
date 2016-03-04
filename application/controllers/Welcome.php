@@ -65,7 +65,9 @@ class Welcome extends CI_Controller
         if (is_object($result))
         {
             $this->send_json(array(
-                'short_url' => $result->url_short,
+                'short_url' => base_url() . $result->url_short,
+                'message'   => '<strong>Notification!</strong> This URL already exists in database, please ' .
+                    'use existing link',
                 'success'   => TRUE
             ));
         }
@@ -96,6 +98,7 @@ class Welcome extends CI_Controller
         $this->Urls->save_pair($url, $short_url);
         $this->send_json(array(
             'short_url' => base_url() . $short_url,
+            'message'   => '<strong>Success!</strong> Short URL was successfully created',
             'success'   => TRUE
         ));
     }
